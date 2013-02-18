@@ -1,3 +1,4 @@
+# encoding: utf-8
 
 # Protected não é muito usado, para falar a verdade
 # é recomendado usar o private pois ele tem o mesmo
@@ -19,8 +20,8 @@ class Protected
 end
 
 joao = Protected.new; joao.name = "João"
-pedro = Person.new; pedro.name = 'Pedro'
-joaquim = Person.new; joaquim.name = 'Joaquim'
+pedro = Protected.new; pedro.name = "Pedro"
+joaquim = Protected.new; joaquim.name = "Joaquim"
 
 joao.befriend([pedro])
 # Pedro diz: Olá meu novo amigo João!
